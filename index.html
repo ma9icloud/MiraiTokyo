@@ -5,8 +5,6 @@
     <!-- Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Font Awesome -->
-    <!--<link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">-->
     <title>MIRAI Tokyo – The Nexus of Music and Asia</title>
 
     <style>
@@ -25,6 +23,10 @@
         .nav * {
             color: gray !important;
         }
+
+            .nav *:hover {
+                color: #eb5c2b !important;
+            }
 
         h2 span {
             width: 0.7em;
@@ -54,34 +56,39 @@
             transform: translate(-50%,-50%);
         }
 
-        * {
-            --border: 1px solid black;
+        #other-links img:hover {
+            transform: scale(1.2);
+        }
+
+        #other-links img {
+            transition: transform 0.3s ease-in;
+        }
+
+        #other-links h2 {
+            pointer-events: none;
         }
     </style>
 </head>
 <body>
-    <div id="top" class="container-fluid vh-100 d-flex flex-column">
-        <div class="row p-5 flex-grow-1" style="background-image:url(head_bg.jpg);background-size:cover;background-position:bottom;">
+    <div class="container-fluid vh-100 d-flex flex-column">
+        <div id="head_bg" class="row p-5 flex-grow-1" style="background-image:url(head_bg.jpg);background-size:cover;background-position:bottom;">
             <div class="col d-flex flex-column">
                 <div class="row">
-                    <img src="logo1.png" class="logo" />
+                    <img src="logo.png" class="logo" />
                 </div>
                 <div class="flex-grow-1"></div>
                 <nav class="row nav flex-column font-weight-bold">
                     <div class="row">
-                        <a class="nav-link" href="#top">TOP</a>
-                    </div>
-                    <div class="row">
                         <a class="nav-link" href="#about">ABOUT US</a>
-                        <div></div>
                     </div>
                     <div class="row">
                         <a class="nav-link" href="#works">WORKS</a>
-                        <div></div>
                     </div>
                     <div class="row">
                         <a class="nav-link" href="#artists">ARTISTS</a>
-                        <div></div>
+                    </div>
+                    <div class="row">
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </div>
                 </nav>
             </div>
@@ -94,17 +101,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg">
                 <div class="row py-4 align-items-center text-center">
-                    <div class="col py-3 border-right border-orange">
+                    <div class="col-sm py-3 border-right border-orange">
                         <div class="text-muted">2018.09</div>
                         <div>NOISEMAKER CHINA TOUR</div>
                     </div>
-                    <div class="col py-3 border-right border-orange">
+                    <div class="col-sm py-3 border-right border-orange">
                         <div class="text-muted">2018.09</div>
                         <div>CRYSTAL LAKE 1st CHINA TOUR</div>
                     </div>
-                    <div class="col py-3 border-right border-orange">
+                    <div class="col-sm py-3 border-right border-orange">
                         <div class="text-muted">2018.09</div>
                         <div>NOISEMAKER CHINA TOUR</div>
                     </div>
@@ -117,20 +124,9 @@
             <div id="about" class="my-5">
                 <h2 class="my-5"><span class="bg-orange mr-1"></span>ABOUT US</h2>
                 <div class="row mx-auto justify-content-center align-items-center">
-                    <img src="5x3.png" class="col-6 mr-n5 img-fluid">
-                    <div class="col-4 ml-n5 p-4 bg-orange text-wrap text-white" style="line-height:2">
-                        日本のポップカルチャー、エンターテイメントは待ちわびているファンはいるのに実はまだまだ本当の意味で世界へは届いてはいません。
-                        同時に今般の国内情勢を考えた時、海外への進出はもう特別なものであってはいけません。
-                        弊社は日本、中国、米国に拠点を置き、日本の優れたエンターテイメント・コンテンツを現地からの的確なマーケティング情報と独自現地リソースで作り上げたチャンネルを利用し、
-                        ワンストップで世界へ展開します。弊社の「結果の出る仕組み」をベースとした取り組みで日本のアーティスト／コンテンツを確実に世界へ発信して行きます。
-                    </div>
-                </div>
-            </div>
-            <div class="my-5">
-                <h2 class="my-5"><span class="bg-orange mr-1"></span>ABOUT US</h2>
-                <div class="row mx-auto justify-content-center align-items-center">
-                    <img src="changfang.png" class="col-4 mr-4 pl-0 img-fluid" style="margin-top:4em;box-shadow:-4em -4em #eb5c2b">
-                    <div class="col-4" style="line-height:2">
+                    <img id="about_pic" src="about/11.png" class="col-4 px-0 img-fluid">
+                    <div></div>
+                    <div class="col-lg-4" style="line-height:2">
                         日本のポップカルチャー、エンターテイメントは待ちわびているファンはいるのに実はまだまだ本当の意味で世界へは届いてはいません。
                         同時に今般の国内情勢を考えた時、海外への進出はもう特別なものであってはいけません。
                         弊社は日本、中国、米国に拠点を置き、日本の優れたエンターテイメント・コンテンツを現地からの的確なマーケティング情報と独自現地リソースで作り上げたチャンネルを利用し、
@@ -144,24 +140,21 @@
                     <div class="col-26pct">
                         <img src="works/5.png" class="img-fluid w-100">
                         <div class="my-3">
-                            <div>Japanese Artists</div>
-                            <div>Management</div>
+                            <div>Licensing and localization</div>
                         </div>
                         <a><u>more +</u></a>
                     </div>
                     <div class="col-26pct">
                         <img src="works/1.png" class="img-fluid w-100">
                         <div class="my-3">
-                            <div>Japanese Artists</div>
-                            <div>Management</div>
+                            <div>Artists management</div>
                         </div>
                         <a><u>more +</u></a>
                     </div>
                     <div class="col-26pct">
                         <img src="works/4.png" class="img-fluid w-100">
                         <div class="my-3">
-                            <div>Japanese Artists</div>
-                            <div>Management</div>
+                            <div>Live producing</div>
                         </div>
                         <a><u>more +</u></a>
                     </div>
@@ -169,24 +162,14 @@
                     <div class="col-26pct">
                         <img src="works/6.png" class="img-fluid w-100">
                         <div class="my-3">
-                            <div>Japanese Artists</div>
-                            <div>Management</div>
+                            <div>Label</div>
                         </div>
                         <a><u>more +</u></a>
                     </div>
                     <div class="col-26pct">
                         <img src="works/2.png" class="img-fluid w-100">
                         <div class="my-3">
-                            <div>Japanese Artists</div>
-                            <div>Management</div>
-                        </div>
-                        <a><u>more +</u></a>
-                    </div>
-                    <div class="col-26pct">
-                        <img src="works/3.png" class="img-fluid w-100">
-                        <div class="my-3">
-                            <div>Japanese Artists</div>
-                            <div>Management</div>
+                            <div>Casting and promotion</div>
                         </div>
                         <a><u>more +</u></a>
                     </div>
@@ -194,29 +177,46 @@
             </div>
             <div id="artists" class="my-5">
                 <h2 class="my-5"><span class="bg-orange mr-1"></span>ARTISTS</h2>
-                <div class="col-3 px-0">
-                    <img src="gray.png" class="img-fluid w-100">
+                <div class="row justify-content-center mx-auto">
+                    <img src="artists/10.png" class="img-fluid w-100" />
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid my-7rem">
+    <div id="other-links" class="container-fluid my-7rem">
         <div class="row w-75 mx-auto justify-content-center text-center">
-            <div class="col-5 mr-4">
+            <div class="col-7 col-lg-5 my-1 px-0 overflow-hidden" style="min-width:220px">
                 <img src="other/8.png" class="img-fluid w-100">
                 <h2 class="text-on-img text-white">COMPANY</h2>
             </div>
-            <div class="col-5 ml-4">
+            <div id="blank_col_other"></div>
+            <div class="col-7 col-lg-5 my-1 px-0 overflow-hidden" style="min-width:220px">
                 <img src="other/9.png" class="img-fluid w-100">
                 <h2 class="text-on-img text-white">COOPERATIVE<br />PARTNERS</h2>
             </div>
         </div>
     </div>
-    <footer class="text-center">
-        <img src="logo1.png" class="logo" />
-        <small class="d-block p-2 bg-orange">
-            &copy; MIRAI Tokyo All Rights Reserved.
-        </small>
+    <footer class="container-fluid bg-orange p-5">
+        <div class="row">
+            <div class="col">
+                <img src="logo.png" class="logo" />
+                <small class="d-block p-2 bg-orange">
+                    &copy; MIRAI Tokyo All Rights Reserved.
+                </small>
+            </div>
+            <div class="col text-right">
+                株式会社MIRAI Tokyo<br>
+                150-0002<br>
+                東京都渋谷区渋谷1-3-18 ヴィラモデルナB403<br>
+                info@miraitky.com<br>
+                03-6427-4063<br>
+                <br>
+                MIRAI INC. Tokyo<br>
+                1-3-18 VILLA MODERNA B403<br>
+                Shibuya-ku Shibuya Tokyo, Japan 1500002<br>
+                +81-3-6427-4063<br>
+            </div>
+        </div>
     </footer>
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -227,8 +227,48 @@
         window.addEventListener("resize", change);
 
         function change() {
+            // menu
+            const head_bg = document.querySelector("#head_bg");
+            const nav = head_bg.querySelector("nav");
+            if (window.innerWidth < 768) {
+                head_bg.classList.replace("p-5", "p-0");
+                nav.style.display = "none";
+            } else {
+                head_bg.classList.replace("p-0", "p-5");
+                nav.style.removeProperty("display");
+            }
+
+            // width of news
             const news = document.querySelector("#news");
-            news.style.width = news.offsetHeight + "px";
+            const context = news.nextElementSibling;
+            news.style.removeProperty("width");
+            if (Math.abs(news.offsetLeft + news.offsetWidth - context.offsetLeft) <= 1) {
+                news.style.width = news.offsetHeight + "px";
+            } else {
+                news.style.width = "100%";
+            }
+
+            // shadow of about us picture
+            const about_pic = document.querySelector("#about_pic");
+            const width = about_pic.offsetHeight / 15;
+            about_pic.style.marginTop = width + "px";
+            about_pic.style.boxShadow = (-width) + "px " + (-width) + "px #eb5c2b";
+            const blank_col = about_pic.nextElementSibling;
+            const text = blank_col.nextElementSibling;
+            if (Math.abs(blank_col.offsetLeft + blank_col.offsetWidth - text.offsetLeft) <= 1) {
+                blank_col.style.width = "50px";
+            } else {
+                blank_col.style.removeProperty("width");
+            }
+
+            // blank of others
+            const blank_col_other = document.querySelector("#blank_col_other");
+            const pic_partner = blank_col_other.nextElementSibling;
+            if (Math.abs(blank_col_other.offsetLeft + blank_col_other.offsetWidth - pic_partner.offsetLeft) <= 1) {
+                blank_col_other.style.width = "50px";
+            } else {
+                blank_col_other.style.removeProperty("width");
+            }
         }
     </script>
 </body>
