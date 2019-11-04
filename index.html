@@ -231,10 +231,14 @@
             const head_bg = document.querySelector("#head_bg");
             const nav = head_bg.querySelector("nav");
             if (window.innerWidth < 768) {
-                head_bg.classList.replace("p-5", "p-0");
+                head_bg.classList.remove("p-5");
+                head_bg.classList.remove("p-0");
+                head_bg.classList.add("p-0");
                 nav.style.display = "none";
             } else {
-                head_bg.classList.replace("p-0", "p-5");
+                head_bg.classList.remove("p-5");
+                head_bg.classList.remove("p-0");
+                head_bg.classList.add("p-5");
                 nav.style.removeProperty("display");
             }
 
