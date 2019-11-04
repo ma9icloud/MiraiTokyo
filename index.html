@@ -34,10 +34,12 @@
             display: inline-block
         }
 
-        .col-26pct {
-            -ms-flex: 0 0 25%;
-            flex: 0 0 26%;
-            max-width: 26%;
+        @media(min-width:576px) {
+            .col-sm-26pct {
+                -ms-flex: 0 0 25%;
+                flex: 0 0 26%;
+                max-width: 26%;
+            }
         }
 
         .my-7rem {
@@ -137,21 +139,21 @@
             <div id="works" class="my-5">
                 <h2 class="my-5"><span class="bg-orange mr-1"></span>WORKS</h2>
                 <div class="row justify-content-around font-weight-bold">
-                    <div class="col-26pct">
+                    <div class="col-sm-26pct">
                         <img src="works/5.png" class="img-fluid w-100">
                         <div class="my-3">
                             <div>Licensing and localization</div>
                         </div>
                         <a><u>more +</u></a>
                     </div>
-                    <div class="col-26pct">
+                    <div class="col-sm-26pct">
                         <img src="works/1.png" class="img-fluid w-100">
                         <div class="my-3">
                             <div>Artists management</div>
                         </div>
                         <a><u>more +</u></a>
                     </div>
-                    <div class="col-26pct">
+                    <div class="col-sm-26pct">
                         <img src="works/4.png" class="img-fluid w-100">
                         <div class="my-3">
                             <div>Live producing</div>
@@ -159,14 +161,14 @@
                         <a><u>more +</u></a>
                     </div>
                     <div class="w-100 my-4"></div>
-                    <div class="col-26pct">
+                    <div class="col-sm-26pct">
                         <img src="works/6.png" class="img-fluid w-100">
                         <div class="my-3">
                             <div>Label</div>
                         </div>
                         <a><u>more +</u></a>
                     </div>
-                    <div class="col-26pct">
+                    <div class="col-sm-26pct">
                         <img src="works/2.png" class="img-fluid w-100">
                         <div class="my-3">
                             <div>Casting and promotion</div>
@@ -178,7 +180,7 @@
             <div id="artists" class="my-5">
                 <h2 class="my-5"><span class="bg-orange mr-1"></span>ARTISTS</h2>
                 <div class="row justify-content-center mx-auto">
-                    <img src="artists/10.png" class="img-fluid w-100" />
+                    <img id="artist_pic" src="artists/10.png" class="img-fluid w-100" />
                 </div>
             </div>
         </div>
@@ -273,6 +275,10 @@
             } else {
                 blank_col_other.style.removeProperty("width");
             }
+
+            // wechat browser fix
+            const artist_pic = document.querySelector("#artist_pic");
+            artist_pic.style.height = artist_pic.naturalHeight / artist_pic.naturalWidth * artist_pic.offsetWidth + "px";
         }
     </script>
 </body>
