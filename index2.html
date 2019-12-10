@@ -68,16 +68,11 @@
                 font-weight: 500;
                 line-height: 1.2;
             }
-
-            #contact {
-                text-align: right;
-                margin-top: 0px !important;
-            }
         }
 
         .my-7rem {
             margin-top: 7rem !important;
-            margin-bottom: 7rem !important;
+            margin-bottom: 3rem !important;
         }
 
         .logo {
@@ -187,10 +182,12 @@
         <div class="w-75 mx-auto">
             <div id="about" class="my-5">
                 <h2 class="my-5"><span class="bg-orange mr-1"></span>ABOUT US</h2>
-                <div class="row mx-auto justify-content-center align-items-center">
-                    <img id="about_pic" src="about/about_us.jpg" class="col-4 px-0 mb-3 img-fluid">
-                    <div></div>
-                    <div class="col-xl-4" style="line-height:2">
+                <div class="row justify-content-center">
+                    <a class="col-4 px-0 mb-3" data-toggle="collapse" href="#about_text" aria-expanded="false" aria-controls="about_text">
+                        <img id="about_pic" src="about/about_us.jpg" class="img-fluid">
+                    </a>
+                    <div class="w-100"></div>
+                    <div id="about_text" class="collapse col-8" style="line-height:2">
                         日本のポップカルチャー、エンターテイメントを待ちわびているファンが世界中にいることはもう誰もが知っていることですが、
                         実はまだまだ本当の意味で世界へは届いてはいません。
                         また今般の国内情勢を考えた時、
@@ -566,21 +563,29 @@
             </div>
         </div>
     </div>
-    <footer class="container-fluid bg-orange p-5">
-        <div class="row">
-            <div class="col-sm">
-                <img src="logo.png" class="logo" />
-                <small class="d-block p-2 bg-orange">
-                    &copy; MIRAI Tokyo All Rights Reserved.
-                </small>
+    <div class="w-75 mx-auto">
+        <div id="contact" class="my-5">
+            <h2 class="my-5"><span class="bg-orange mr-1"></span>CONTACT</h2>
+            <div class="row mx-auto justify-content-center font-weight-bold col" style="max-width:700px">
+                <div class="col-sm-5">社名 ：</div><div class="col-sm-7">株式会社　MIRAI Tokyo</div>
+                <div class="w-100"></div>
+                <div class="col-sm-5">住所 ：</div><div class="col-sm-7">東京渋谷区渋谷1-3-18  ビラモデルナ B403</div>
+                <div class="w-100"></div>
+                <div class="col-sm-5">電話番号 ：</div><div class="col-sm-7">03-6427-4063 (代表）</div>
+                <div class="w-100"></div>
+                <div class="col-sm-5">設立 ：</div><div class="col-sm-7">2017年 11月13日</div>
+                <div class="w-100"></div>
+                <div class="col-sm-5">代表取締役CEO ：</div><div class="col-sm-7">星　克典</div>
             </div>
-            <div class="col-sm my-3" id="contact">
-                社名 ： 株式会社　MIRAI Tokyo<br />
-                住所 ： 東京渋谷区渋谷1-3-18  ビラモデルナ B403<br />
-                電話番号 ： 03-6427-4063 (代表）<br />
-                設立 ： 2017年11月13日<br />
-                代表取締役CEO ：　星　克典
-            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-orange p-3">
+        <div class="row justify-content-center">
+            <img src="logo.png" class="logo" />
+            <small class="d-block p-2 bg-orange">
+                &copy; MIRAI Tokyo All Rights Reserved.
+            </small>
         </div>
     </footer>
 
@@ -635,13 +640,6 @@
             const width = about_pic.offsetHeight / 15;
             about_pic.style.marginTop = width + "px";
             about_pic.style.boxShadow = (-width) + "px " + (-width) + "px #eb5c2b";
-            const blank_col = about_pic.nextElementSibling;
-            const text = blank_col.nextElementSibling;
-            if (Math.abs(blank_col.offsetLeft + blank_col.offsetWidth - text.offsetLeft) <= 1) {
-                blank_col.style.width = "50px";
-            } else {
-                blank_col.style.removeProperty("width");
-            }
 
             // blank of others
             const blank_col_other = document.querySelector("#blank_col_other");
