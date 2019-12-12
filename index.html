@@ -189,8 +189,7 @@
                 <h2 class="my-5"><span class="bg-orange mr-1"></span>ABOUT US</h2>
                 <div class="row mx-auto justify-content-center align-items-center">
                     <img id="about_pic" src="about/about_us.jpg" class="col-4 px-0 mb-3 img-fluid">
-                    <div></div>
-                    <div class="col-xl-4" style="line-height:2">
+                    <div class="col-xl-5 ml-5" style="line-height:2">
                         日本のポップカルチャー、エンターテイメントを待ちわびているファンが世界中にいることはもう誰もが知っていることですが、
                         実はまだまだ本当の意味で世界へは届いてはいません。
                         また今般の国内情勢を考えた時、
@@ -506,11 +505,10 @@
     </div>
     <div id="other-links" class="container-fluid my-7rem">
         <div class="row w-75 mx-auto justify-content-center text-center">
-            <div class="col-7 col-lg-5 my-1 px-0 overflow-hidden" data-toggle="modal" data-target="#client_companies">
+            <div class="col-7 col-lg-5 my-1 px-0 overflow-hidden mr-5" data-toggle="modal" data-target="#client_companies">
                 <img src="other/8.png" class="img-fluid w-100 clickable">
                 <p class="text-on-img text-white">CLIENT<br />COMPANIES</p>
             </div>
-            <div id="blank_col_other"></div>
             <div class="col-7 col-lg-5 my-1 px-0 overflow-hidden" data-toggle="modal" data-target="#cooperative_partners">
                 <img src="other/9.png" class="img-fluid w-100 clickable">
                 <p class="text-on-img text-white">COOPERATIVE<br />PARTNERS</p>
@@ -587,6 +585,7 @@
     <script type="text/javascript">
         onResize();
         window.addEventListener("resize", onResize);
+
         // click more
         for (let more of document.querySelectorAll("#works a")) {
             more.addEventListener("click", function () {
@@ -602,6 +601,7 @@
             });
         }
 
+        // gallery
         baguetteBox.run('#works .collapse div');
 
         function onResize() {
@@ -622,12 +622,10 @@
 
             // width of news
             const news = document.querySelector("#news");
-            const context = news.nextElementSibling;
-            news.style.removeProperty("width");
-            if (Math.abs(news.offsetLeft + news.offsetWidth - context.offsetLeft) <= 1) {
-                news.style.width = news.offsetHeight + "px";
-            } else {
+            if (window.innerWidth < 992) {
                 news.style.width = "100%";
+            } else {
+                news.style.width = news.offsetHeight + "px";
             }
 
             // shadow of about us picture
@@ -635,21 +633,21 @@
             const width = about_pic.offsetHeight / 15;
             about_pic.style.marginTop = width + "px";
             about_pic.style.boxShadow = (-width) + "px " + (-width) + "px #eb5c2b";
-            const blank_col = about_pic.nextElementSibling;
-            const text = blank_col.nextElementSibling;
-            if (Math.abs(blank_col.offsetLeft + blank_col.offsetWidth - text.offsetLeft) <= 1) {
-                blank_col.style.width = "50px";
-            } else {
-                blank_col.style.removeProperty("width");
+
+            // blank of about us
+            const about_text = about_pic.nextElementSibling;
+            if (window.innerWidth < 1200 && about_text.classList.contains("ml-5")) {
+                about_text.classList.remove("ml-5");
+            } else if (window.innerWidth >= 1200 && !about_text.classList.contains("ml-5")) {
+                about_text.classList.add("ml-5");
             }
 
-            // blank of others
-            const blank_col_other = document.querySelector("#blank_col_other");
-            const pic_partner = blank_col_other.nextElementSibling;
-            if (Math.abs(blank_col_other.offsetLeft + blank_col_other.offsetWidth - pic_partner.offsetLeft) <= 1) {
-                blank_col_other.style.width = "50px";
-            } else {
-                blank_col_other.style.removeProperty("width");
+            // blank of other
+            const other_div = document.querySelector("#other-links > div > div");
+            if (window.innerWidth < 992 && other_div.classList.contains("mr-5")) {
+                other_div.classList.remove("mr-5");
+            } else if (window.innerWidth >= 992 && !other_div.classList.contains("mr-5")) {
+                other_div.classList.add("mr-5");
             }
 
             // wechat browser fix
