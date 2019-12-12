@@ -27,6 +27,7 @@
         }
 
             a:hover {
+                color: #eb5c2b;
                 text-decoration: none;
             }
 
@@ -70,14 +71,13 @@
             }
 
             #contact {
-                text-align: right;
                 margin-top: 0px !important;
             }
         }
 
         .my-7rem {
             margin-top: 7rem !important;
-            margin-bottom: 7rem !important;
+            margin-bottom: 3rem !important;
         }
 
         .logo {
@@ -152,7 +152,7 @@
                         <a class="nav-link" href="#artists">ARTISTS</a>
                     </div>
                     <div class="row">
-                        <a class="nav-link" href="#contact">CONTACT</a>
+                        <a class="nav-link" href="#company">COMPANY PROFILE</a>
                     </div>
                 </nav>
             </div>
@@ -564,6 +564,24 @@
             </div>
         </div>
     </div>
+    <div class="w-75 mx-auto">
+        <div id="company" class="my-5">
+            <h2 class="my-5"><span class="bg-orange mr-1"></span>COMPANY PROFILE</h2>
+
+            <div id="company_collapse" class="row mx-auto justify-content-center font-weight-bold" style="max-width:700px">
+                <div class="col-sm-5">社名 ：</div><div class="col-sm-7">株式会社　MIRAI Tokyo</div>
+                <div class="w-100"></div>
+                <div class="col-sm-5">住所 ：</div><div class="col-sm-7">東京渋谷区渋谷1-3-18  ビラモデルナ B403</div>
+                <div class="w-100"></div>
+                <div class="col-sm-5">代表電話番号 ：</div><div class="col-sm-7">03-6427-4063 (代表）</div>
+                <div class="w-100"></div>
+                <div class="col-sm-5">設立 ：</div><div class="col-sm-7">2017年 11月13日</div>
+                <div class="w-100"></div>
+                <div class="col-sm-5">CEO ：</div><div class="col-sm-7">星　克典</div>
+            </div>
+        </div>
+    </div>
+
     <footer class="container-fluid bg-orange p-5">
         <div class="row">
             <div class="col-sm">
@@ -572,12 +590,11 @@
                     &copy; MIRAI Tokyo All Rights Reserved.
                 </small>
             </div>
-            <div class="col-sm my-3" id="contact">
-                社名 ： 株式会社　MIRAI Tokyo<br />
-                住所 ： 東京渋谷区渋谷1-3-18  ビラモデルナ B403<br />
-                電話番号 ： 03-6427-4063 (代表）<br />
-                設立 ： 2017年11月13日<br />
-                代表取締役CEO ：　星　克典
+            <div class="mt-3" id="contact" style="padding-left:23px">
+                <h6>CONTACT</h6>
+                株）MIRAI Tokyo<br />
+                info@miraitky.com<br />
+                03-6427-4065 (代）<br />
             </div>
         </div>
     </footer>
@@ -587,7 +604,9 @@
         window.addEventListener("resize", onResize);
 
         // click more
-        for (let more of document.querySelectorAll("#works a")) {
+        const mores = document.querySelectorAll("#works a > u")
+        for (let idx = 0; idx < mores.length; idx++) {
+            const more = mores[idx];
             more.addEventListener("click", function () {
                 const el = this;
                 const isActive = el.classList.contains("active");
@@ -622,6 +641,7 @@
 
             // width of news
             const news = document.querySelector("#news");
+            news.style.removeProperty("width");
             if (window.innerWidth < 992) {
                 news.style.width = "100%";
             } else {
@@ -658,13 +678,13 @@
             const work_groups = ["group_licensing_and_localization", "group_artists_management", "group_live_producing", "group_label", "group_casting_and_promotion"];
             const work_exps = ["licensing_and_localization", "artists_management", "live_producing", "label", "casting_and_promotion"];
             if (window.innerWidth < 576) {
-                if (document.querySelector("#" + work_groups[0]).nextElementSibling.id != work_groups[0]) {
+                if (document.querySelector("#" + work_groups[0]).nextElementSibling.id != work_exps[0]) {
                     for (let i = 0; i < 5; i++) {
                         document.querySelector("#" + work_groups[i]).after(document.querySelector("#" + work_exps[i]));
                     }
                 }
             } else {
-                if (document.querySelector("#" + work_groups[0]).nextElementSibling.id == work_groups[0]) {
+                if (document.querySelector("#" + work_groups[0]).nextElementSibling.id == work_exps[0]) {
                     for (let i = 2; i >= 0; i--) {
                         document.querySelector("#" + work_groups[2]).after(document.querySelector("#" + work_exps[i]));
                     }
