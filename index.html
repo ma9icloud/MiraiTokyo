@@ -18,15 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.min.js" integrity="sha256-yQGjQhFs3LtyiN5hhr3k9s9TWZOh/RzCkD3gwwCKlkg=" crossorigin="anonymous"></script>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/earlyaccess/nikukyu.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
 
     <style>
         html {
@@ -42,40 +34,8 @@
                 text-decoration: none;
             }
 
-        .wf-mplus1p {
-            font-family: "M PLUS 1p";
-        }
-
-        .wf-roundedmplus1c {
-            font-family: "M PLUS Rounded 1c";
-        }
-
-        .wf-hannari {
-            font-family: "Hannari";
-        }
-
-        .wf-kokoro {
-            font-family: "Kokoro";
-        }
-
-        .wf-sawarabimincho {
-            font-family: "Sawarabi Mincho";
-        }
-
         .wf-sawarabigothic {
             font-family: "Sawarabi Gothic";
-        }
-
-        .wf-nikukyu {
-            font-family: "Nikukyu";
-        }
-
-        .wf-nicomoji {
-            font-family: "Nico Moji";
-        }
-
-        .wf-notosansjapanese {
-            font-family: "Noto Sans JP";
         }
 
         .bg-orange {
@@ -626,7 +586,7 @@
     <div class="w-75 mx-auto">
         <div id="company" class="my-5">
             <h2 class="my-5"><span class="bg-orange mr-1"></span>COMPANY PROFILE</h2>
-            <div id="company_collapse" class="row mx-auto justify-content-center font-weight-bold wf-roundedmplus1c" style="max-width:700px">
+            <div id="company_collapse" class="row mx-auto justify-content-center wf-sawarabigothic" style="max-width:700px">
                 <div class="col-sm-5">社名 ：</div><div class="col-sm-7">株式会社　MIRAI Tokyo</div>
                 <div class="w-100"></div>
                 <div class="col-sm-5">住所 ：</div><div class="col-sm-7">東京渋谷区渋谷1-3-18  ビラモデルナ B403</div>
@@ -637,7 +597,6 @@
                 <div class="w-100"></div>
                 <div class="col-sm-5">CEO ：</div><div class="col-sm-7">星　克典</div>
             </div>
-            <button onclick="var clses = ['wf-mplus1p', 'wf-roundedmplus1c', 'wf-hannari', 'wf-kokoro', 'wf-sawarabimincho', 'wf-sawarabigothic', 'wf-nikukyu', 'wf-nicomoji', 'wf-notosansjapanese']; var el = document.querySelector('#company_collapse'); var cls = el.className; for (var i = 0; i < clses.length; i++) { if (cls.includes(clses[i])) { var newcls =clses[(i + 1) % 9]; el.className = cls.replace(clses[i], newcls); this.innerText = (i+1)+ newcls;  } }">フォント変更</button>
         </div>
     </div>
 
@@ -649,7 +608,7 @@
                     &copy; MIRAI Tokyo All Rights Reserved.
                 </small>
             </div>
-            <div class="mt-3 wf-roundedmplus1c" id="contact" style="padding-left:23px">
+            <div class="mt-3 wf-sawarabigothic" id="contact" style="padding-left:23px">
                 <b>CONTACT</b><br />
                 株）MIRAI Tokyo<br />
                 info@miraitky.com<br />
