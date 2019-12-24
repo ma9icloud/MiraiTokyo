@@ -17,9 +17,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.min.css" integrity="sha256-cKiyvRKpm8RaTdU71Oq2RUVgvfWrdIXjvVdQF2oZ1Y4=" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.min.js" integrity="sha256-yQGjQhFs3LtyiN5hhr3k9s9TWZOh/RzCkD3gwwCKlkg=" crossorigin="anonymous"></script>
 
-    <!-- swipe -->
-    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
@@ -180,10 +177,6 @@
 
         #other-links .modal img {
             max-height: 100px;
-        }
-
-        #baguetteBox-overlay img {
-            pointer-events: none;
         }
     </style>
 </head>
@@ -688,22 +681,6 @@
 
         // gallery
         baguetteBox.run('#works .collapse div');
-
-        // swipe picture
-        const pic_bg = document.querySelector("#baguetteBox-overlay");
-        const pic_slider = document.querySelector("#baguetteBox-slider");
-        const left_pic_btn = document.querySelector("#previous-button");
-        const right_pic_btn = document.querySelector("#next-button");
-        pic_slider.addEventListener("click", function (e) { e.stopPropagation(); })
-        const mc = new Hammer(pic_bg);
-        mc.on("swipeleft swiperight", function (e) {
-            console.log(e.type);
-            if (e.type == "swipeleft") {
-                right_pic_btn.click();
-            } else {
-                left_pic_btn.click();
-            };
-        });
 
         function onResize() {
             // menu
