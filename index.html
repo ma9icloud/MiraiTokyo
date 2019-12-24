@@ -2,24 +2,35 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MIRAI Tokyo – The Nexus of Music and Asia</title>
     <link rel="icon" href="mirai_32x32.png" sizes="32x32" />
     <link rel="icon" href="mirai_192x192.png" sizes="192x192" />
 
     <!-- Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- baguetteBox -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css" integrity="sha256-cKiyvRKpm8RaTdU71Oq2RUVgvfWrdIXjvVdQF2oZ1Y4=" crossorigin="anonymous" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js" integrity="sha256-yQGjQhFs3LtyiN5hhr3k9s9TWZOh/RzCkD3gwwCKlkg=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.min.css" integrity="sha256-cKiyvRKpm8RaTdU71Oq2RUVgvfWrdIXjvVdQF2oZ1Y4=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.min.js" integrity="sha256-yQGjQhFs3LtyiN5hhr3k9s9TWZOh/RzCkD3gwwCKlkg=" crossorigin="anonymous"></script>
+
+    <!-- swipe -->
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/nikukyu.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -34,8 +45,40 @@
                 text-decoration: none;
             }
 
+        .wf-mplus1p {
+            font-family: "M PLUS 1p";
+        }
+
         .wf-roundedmplus1c {
             font-family: "M PLUS Rounded 1c";
+        }
+
+        .wf-hannari {
+            font-family: "Hannari";
+        }
+
+        .wf-kokoro {
+            font-family: "Kokoro";
+        }
+
+        .wf-sawarabimincho {
+            font-family: "Sawarabi Mincho";
+        }
+
+        .wf-sawarabigothic {
+            font-family: "Sawarabi Gothic";
+        }
+
+        .wf-nikukyu {
+            font-family: "Nikukyu";
+        }
+
+        .wf-nicomoji {
+            font-family: "Nico Moji";
+        }
+
+        .wf-notosansjapanese {
+            font-family: "Noto Sans JP";
         }
 
         .bg-orange {
@@ -137,6 +180,10 @@
 
         #other-links .modal img {
             max-height: 100px;
+        }
+
+        #baguetteBox-overlay img {
+            pointer-events: none;
         }
     </style>
 </head>
@@ -241,7 +288,7 @@
                     </div>
                     <div id="licensing_and_localization" class="collapse col-10 mb-4" data-parent="#works">
                         <div class="w-100"></div>
-                        <div class="mb-2">
+                        <div class="my-2">
                             <h2><span class="bg-orange mr-1"></span>2019.01</h2>
                             <h2><span class="mr-1"></span>吴青峰「起风了」・シングルリリース</h2>
                             <h5>高橋優「ヤキモチ」の中国語正式版（买辣椒也用券バージョン）カバー（中国国内のみ）</h5>
@@ -253,22 +300,10 @@
                             </a>
                         </div>
                         <hr>
-                        <div class="mb-2">
-                            <h2><span class="bg-orange mr-1"></span>2019.05</h2>
-                            <h2><span class="mr-1"></span>KOHH x Justin(黄明昊) 「MARIA」・シングルリリース</h2>
-                            <h5> 日本人有名ラッパー＋中国人有名アイドルラッパーのシングルリリース</h5>
-                            <a href="works_content/image27.jpeg">
-                                <img src="works_content/image27.jpeg" class="img-fluid w-100">
-                            </a>
-                            <a href="works_content/image28.jpeg">
-                                <img src="works_content/image28.jpeg" class="img-fluid w-100">
-                            </a>
-                        </div>
-                        <hr>
                     </div>
                     <div id="artists_management" class="collapse col-10 mb-4" data-parent="#works">
                         <div class="w-100"></div>
-                        <div class="mb-2">
+                        <div class="my-2">
                             <h2><span class="bg-orange mr-1"></span>2018.12</h2>
                             <h2><span class="mr-1"></span>买辣椒也用券「起风了」・シングルリリース</h2>
                             <h5>高橋優「ヤキモチ」の中国語正式版リリース（中国国内のみ）</h5>
@@ -280,7 +315,7 @@
                             </a>
                         </div>
                         <hr>
-                        <div class="mb-2">
+                        <div class="my-2">
                             <h2><span class="bg-orange mr-1"></span>买辣椒也用券「旧岛看月亮」・シングルリリース</h2>
                             <h5>日本優秀なチームがプロデュース（中国国内のみ）</h5>
                             <a href="works_content/image21.jpeg" class="img-fluid w-100">
@@ -288,7 +323,7 @@
                             </a>
                         </div>
                         <hr>
-                        <div class="mb-2">
+                        <div class="my-2">
                             <h2><span class="bg-orange mr-1"></span>2019.10</h2>
                             <h2><span class="mr-1"></span>买辣椒也用券「我怀疑你曾来过」・シングルリリース</h2>
                             <h5>竹内まりや「駅」の中国語正式版リリース（中国国内のみ）</h5>
@@ -417,7 +452,7 @@
                         </a>
                     </div>
                     <div id="group_producing" class="col-sm-26pct mb-4 font-weight-bold">
-                        <img src="works/8.png" class="img-fluid w-100">
+                        <img src="works/8.jpg" class="img-fluid w-100">
                         <div class="mt-3">
                             <div>Producing</div>
                         </div>
@@ -512,26 +547,14 @@
                     <div id="producing" class="collapse col-10 mb-4" data-parent="#works">
                         <div class="w-100"></div>
                         <div class="my-2">
-                            <h2><span class="bg-orange mr-1"></span>2018.06</h2>
-                            <h2><span class="mr-1"></span>渡辺麻友 x Crossgateスマホゲーム（イメージキャラクター）</h2>
-                            <h5>CM＋ポスター＋Weiboアカウント開設</h5>
-                            <a href="works_content/image3.jpeg" class="img-fluid w-100">
-                                <img src="works_content/image3.jpeg" class="img-fluid w-100">
+                            <h2><span class="bg-orange mr-1"></span>2019.05</h2>
+                            <h2><span class="mr-1"></span>KOHHの旧譜カタログをNetEase Cloud Music より配信開始</h2>
+                            <h5>日本人メジャーHip Hopアーティスト初の「中国本土プラットフォームデビュー」をプロデュース</h5>
+                            <a href="works_content/image27.jpeg">
+                                <img src="works_content/image27.jpeg" class="img-fluid w-100">
                             </a>
-                            <a href="works_content/image4.png" class="img-fluid w-100">
-                                <img src="works_content/image4.png" class="img-fluid w-100">
-                            </a>
-                        </div>
-                        <hr>
-                        <div class="my-2">
-                            <h2><span class="bg-orange mr-1"></span>2018.12</h2>
-                            <h2><span class="mr-1"></span>モデル森絵梨佳・中国SNSアカウント開設</h2>
-                            <h5>RED＆Weiboアカウント</h5>
-                            <a href="works_content/image22.png" class="img-fluid w-100">
-                                <img src="works_content/image22.png" class="img-fluid w-100">
-                            </a>
-                            <a href="works_content/image23.jpeg" class="img-fluid w-100">
-                                <img src="works_content/image23.jpeg" class="img-fluid w-100">
+                            <a href="works_content/image28.jpeg">
+                                <img src="works_content/image28.jpeg" class="img-fluid w-100">
                             </a>
                         </div>
                         <hr>
@@ -610,7 +633,6 @@
     <div class="w-75 mx-auto">
         <div id="company" class="my-5">
             <h2 class="my-5"><span class="bg-orange mr-1"></span>COMPANY PROFILE</h2>
-
             <div id="company_collapse" class="row mx-auto justify-content-center font-weight-bold wf-roundedmplus1c" style="max-width:700px">
                 <div class="col-sm-5">社名 ：</div><div class="col-sm-7">株式会社　MIRAI Tokyo</div>
                 <div class="w-100"></div>
@@ -622,6 +644,7 @@
                 <div class="w-100"></div>
                 <div class="col-sm-5">CEO ：</div><div class="col-sm-7">星　克典</div>
             </div>
+            <button onclick="var clses = ['wf-mplus1p', 'wf-roundedmplus1c', 'wf-hannari', 'wf-kokoro', 'wf-sawarabimincho', 'wf-sawarabigothic', 'wf-nikukyu', 'wf-nicomoji', 'wf-notosansjapanese']; var el = document.querySelector('#company_collapse'); var cls = el.className; for (var i = 0; i < clses.length; i++) { if (cls.includes(clses[i])) { var newcls =clses[(i + 1) % 9]; el.className = cls.replace(clses[i], newcls); this.innerText = (i+1)+ newcls;  } }">フォント変更</button>
         </div>
     </div>
 
@@ -665,6 +688,22 @@
 
         // gallery
         baguetteBox.run('#works .collapse div');
+
+        // swipe picture
+        const pic_bg = document.querySelector("#baguetteBox-overlay");
+        const pic_slider = document.querySelector("#baguetteBox-slider");
+        const left_pic_btn = document.querySelector("#previous-button");
+        const right_pic_btn = document.querySelector("#next-button");
+        pic_slider.addEventListener("click", function (e) { e.stopPropagation(); })
+        const mc = new Hammer(pic_bg);
+        mc.on("swipeleft swiperight", function (e) {
+            console.log(e.type);
+            if (e.type == "swipeleft") {
+                right_pic_btn.click();
+            } else {
+                left_pic_btn.click();
+            };
+        });
 
         function onResize() {
             // menu
