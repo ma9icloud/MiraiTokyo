@@ -1,21 +1,22 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
     <meta charset="utf-8">
+    <meta name="keywords" content="手榴弾,手投げ弾,Hand Grenade">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MIRAI Tokyo – The Nexus of Music and Asia</title>
     <link rel="icon" href="mirai_32x32.png" sizes="32x32" />
     <link rel="icon" href="mirai_192x192.png" sizes="192x192" />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- baguetteBox -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.min.css" integrity="sha256-cKiyvRKpm8RaTdU71Oq2RUVgvfWrdIXjvVdQF2oZ1Y4=" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.min.js" integrity="sha256-yQGjQhFs3LtyiN5hhr3k9s9TWZOh/RzCkD3gwwCKlkg=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <script src="js/baguetteBox.min.js"></script>
 
     <style>
         html {
@@ -23,7 +24,7 @@
         }
 
         body {
-            font-family: "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, YuGothic, sans-serif;
+            font-family: unset;
         }
 
         a {
@@ -46,6 +47,18 @@
         .text-orange {
             color: #eb5c2b !important;
         }
+
+        .btn-orange {
+            color: #fff;
+            background-color: #eb5c2b;
+            border-color: #eb5c2b;
+        }
+
+            .btn-orange:hover {
+                color: #fff;
+                background-color: #cd4213;
+                border-color: #cd4213;
+            }
 
         .nav * {
             color: gray !important;
@@ -164,7 +177,7 @@
                         <a class="nav-link" href="#artists">ARTISTS</a>
                     </div>
                     <div class="row">
-                        <a class="nav-link" href="#company">COMPANY PROFILE</a>
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </div>
                 </nav>
             </div>
@@ -181,15 +194,15 @@
                 <div class="row py-4 align-items-center text-center">
                     <div class="col-sm py-3 border-right border-orange">
                         <div class="text-muted">2019.01</div>
-                        <div>高橋優「ヤキモチ」の中国語正式版吴青峰「起风了」シングルリリース</div>
+                        <div>高橋優「ヤキモチ」の中国語正式版<br />La Jiao「起风了」シングルリリース</div>
                     </div>
                     <div class="col-sm py-3 border-right border-orange">
                         <div class="text-muted">2019.05</div>
-                        <div>「MARIA」・シングルリリース</div>
+                        <div>KOHH x JUSTINコラボ<br />「MARIA」・シングルリリース</div>
                     </div>
                     <div class="col-sm py-3 border-right border-orange">
                         <div class="text-muted">2019.10</div>
-                        <div>竹内まりや名曲「駅」中国語オフィシャルバージョンリリース</div>
+                        <div>竹内まりやの名曲「駅」<br />中国語オフィシャルバージョンリリース</div>
                     </div>
                 </div>
             </div>
@@ -199,26 +212,30 @@
         <div class="w-75 mx-auto">
             <div id="about" class="my-5">
                 <h2 class="my-5"><span class="bg-orange mr-1"></span>ABOUT US</h2>
-                <div class="row mx-auto justify-content-center align-items-center">
-                    <img id="about_pic" src="about/about_us.jpg" class="col-4 px-0 mb-3 img-fluid">
-                    <div class="col-xl-5 ml-5" style="line-height:2">
-                        日本のポップカルチャー、エンターテイメントを待ちわびているファンが世界中にいることはもう誰もが知っていることですが、
-                        実はまだまだ本当の意味で世界へは届いてはいません。
-                        また今般の国内情勢を考えた時、
-                        日本側も海外への進出をもう躊躇している時間はありません。
-                        弊社は日本、中国、米国に強力なパートナーと拠点を置き、
-                        日本の優れたエンターテイメント・コンテンツを現地からの的確なマーケティング情報と独自現地リソースで作り上げたチャンネルを利用し、
-                        シームレスに世界へ展開することが可能です。
-                        弊社は「結果の出る仕組み」を常に考え、
-                        それをベースとした取り組みで日本のポップコンテンツを確実に世界へ届けて行きます。
-                    </div>
+                <div class="col text-center" style="line-height:2.25rem;font-size:1.25rem">
+                    <div class="mb-4"><img src="logo.png" class="img-fluid" /></div>
+                    弊社は日本、中国、米国に強力なパートナーと拠点を置き<br>
+                    日本の優れたエンターテイメント・コンテンツを現地からの<br>
+                    的確なマーケティング情報とリソースでシームレスに世界へ展開します。
+                </div>
+                <div class="row justify-content-around my-4">
+                    <a class="btn btn-orange px-4" role="button" data-toggle="collapse" href="#company" aria-expanded="false" aria-controls="company">
+                        LEARN MORE
+                    </a>
+                </div>
+                <div id="company" class="my-4 text-center collapse" style="line-height:2.25rem;font-size:1.25rem">
+                    <div>株式会社　MIRAI Tokyo</div>
+                    <div>東京渋谷区渋谷1-3-18  ビラモデルナ B403</div>
+                    <div>03-6427-4063 (代表)</div>
+                    <div>設立：2017年11月13日</div>
+                    <div>CEO：星　克典</div>
                 </div>
             </div>
             <div id="works" class="my-5">
                 <h2 class="my-5"><span class="bg-orange mr-1"></span>WORKS</h2>
                 <div class="row justify-content-around">
                     <div id="group_licensing_and_localization" class="col-sm-26pct mb-4 font-weight-bold">
-                        <img src="works/5.png" class="img-fluid w-100">
+                        <img src="works/licensing_and_localization.jpg" class="img-fluid w-100">
                         <div class="mt-3">
                             <div>Licensing and Localization</div>
                         </div>
@@ -227,7 +244,7 @@
                         </a>
                     </div>
                     <div id="group_artists_management" class="col-sm-26pct mb-4 font-weight-bold">
-                        <img src="works/1.png" class="img-fluid w-100">
+                        <img src="works/artists_management.jpg" class="img-fluid w-100">
                         <div class="mt-3">
                             <div>Artists management</div>
                         </div>
@@ -236,7 +253,7 @@
                         </a>
                     </div>
                     <div id="group_live_show_producing" class="col-sm-26pct mb-4 font-weight-bold">
-                        <img src="works/4.png" class="img-fluid w-100">
+                        <img src="works/live_show_producing.jpg" class="img-fluid w-100">
                         <div class="mt-3">
                             <div>Live Show Producing</div>
                         </div>
@@ -247,14 +264,21 @@
                     <div id="licensing_and_localization" class="collapse col-10 mb-4" data-parent="#works">
                         <div class="w-100"></div>
                         <div class="my-2">
-                            <h2><span class="bg-orange mr-1"></span>吴青峰「起风了」・シングルリリース</h2>
+                            <h2><span class="bg-orange mr-1"></span>吴青峰「起风了」・ライセンシング</h2>
                             <h5>2019.01</h5>
                             <h5>高橋優「ヤキモチ」の中国語正式版（买辣椒也用券バージョン）カバー（中国国内のみ）</h5>
-                            <a href="works_content/image24.png">
-                                <img src="works_content/image24.png" class="img-fluid">
+                            <a href="works_content/image24.jpg">
+                                <img src="works_content/image24.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image25.png">
-                                <img src="works_content/image25.png" class="img-fluid">
+                            <a href="works_content/image25.jpg">
+                                <img src="works_content/image25.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <hr>
+                        <div class="my-2">
+                            <h2><span class="bg-orange mr-1"></span>KOHHの旧譜カタログをNetEase Cloud Music より配信開始</h2>
+                            <a href="works/producing.jpg">
+                                <img src="works/producing.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -265,29 +289,33 @@
                             <h2><span class="bg-orange mr-1"></span>买辣椒也用券「起风了」・シングルリリース</h2>
                             <h5>2018.12</h5>
                             <h5>高橋優「ヤキモチ」の中国語正式版リリース（中国国内のみ）</h5>
-                            <a href="works_content/image19.jpeg">
-                                <img src="works_content/image19.jpeg" class="img-fluid">
+                            <a href="works_content/image19.jpg">
+                                <img src="works_content/image19.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image20.png">
-                                <img src="works_content/image20.png" class="img-fluid">
-                            </a>
-                        </div>
-                        <hr>
-                        <div class="my-2">
-                            <h2><span class="bg-orange mr-1"></span>日本優秀なチームがプロデュース（中国国内のみ）</h2>
-                            <h5>买辣椒也用券「旧岛看月亮」・シングルリリース</h5>
-                            <a href="works_content/image21.jpeg">
-                                <img src="works_content/image21.jpeg" class="img-fluid">
+                            <a href="works_content/image20.jpg">
+                                <img src="works_content/image20.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
                         <div class="my-2">
-                            <h2><span class="bg-orange mr-1"></span>买辣椒也用券「我怀疑你曾来过」・シングルリリース</h2>
+                            <h2><span class="bg-orange mr-1"></span>日本の優れたチームがプロデュース</h2>
+                            <h5>买辣椒也用券「旧岛看月亮」・シングルリリース（中国国内のみ）</h5>
+                            <a href="works_content/image21.jpg">
+                                <img src="works_content/image21.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <hr>
+                        <div class="my-2">
+                            <h2><span class="bg-orange mr-1"></span>买辣椒也用券「我怀疑你曾来过」（駅）・シングルリリース</h2>
                             <h5>2019.10</h5>
-                            <h5>竹内まりや「駅」の中国語正式版リリース（中国国内のみ）</h5>
-                            <a href="works_content/image34.jpeg">
-                                <img src="works_content/image34.jpeg" class="img-fluid">
+                            <h5>竹内まりや「駅」、亀田誠治プロデュース（中国国内のみ）</h5>
+                            <a href="works_content/image34.jpg">
+                                <img src="works_content/image34.jpg" class="img-fluid">
                             </a>
+                        </div>
+                        <hr>
+                        <div class="my-2">
+                            <h2>AND MORE</h2>
                         </div>
                         <hr>
                     </div>
@@ -297,11 +325,11 @@
                             <h2><span class="bg-orange mr-1"></span>Another Story 初中国ツアー</h2>
                             <h5>2017.10</h5>
                             <h5>上海、北京</h5>
-                            <a href="works_content/image1.jpeg">
-                                <img src="works_content/image1.jpeg" class="img-fluid">
+                            <a href="works_content/image1.jpg">
+                                <img src="works_content/image1.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image2.jpeg">
-                                <img src="works_content/image2.jpeg" class="img-fluid">
+                            <a href="works_content/image2.jpg">
+                                <img src="works_content/image2.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -309,11 +337,11 @@
                             <h2><span class="bg-orange mr-1"></span>TOTALFAT 初中国ツアー</h2>
                             <h5>2018.07</h5>
                             <h5>北京、広州、成都、上海</h5>
-                            <a href="works_content/image5.jpeg">
-                                <img src="works_content/image5.jpeg" class="img-fluid">
+                            <a href="works_content/image5.jpg">
+                                <img src="works_content/image5.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image6.jpeg">
-                                <img src="works_content/image6.jpeg" class="img-fluid">
+                            <a href="works_content/image6.jpg">
+                                <img src="works_content/image6.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -321,11 +349,11 @@
                             <h2><span class="bg-orange mr-1"></span>MAKE MY DAY 初中国ツアー</h2>
                             <h5>2018.07</h5>
                             <h5>上海、北京、広州</h5>
-                            <a href="works_content/image7.png">
-                                <img src="works_content/image7.png" class="img-fluid">
+                            <a href="works_content/image7.jpg">
+                                <img src="works_content/image7.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image8.jpeg">
-                                <img src="works_content/image8.jpeg" class="img-fluid">
+                            <a href="works_content/image8.jpg">
+                                <img src="works_content/image8.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -333,11 +361,11 @@
                             <h2><span class="bg-orange mr-1"></span>NOISEMAKER 初中国ツアー</h2>
                             <h5>2018.09</h5>
                             <h5>上海、武漢、合肥、北京、広州</h5>
-                            <a href="works_content/image9.jpeg">
-                                <img src="works_content/image9.jpeg" class="img-fluid">
+                            <a href="works_content/image9.jpg">
+                                <img src="works_content/image9.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image10.jpeg">
-                                <img src="works_content/image10.jpeg" class="img-fluid">
+                            <a href="works_content/image10.jpg">
+                                <img src="works_content/image10.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -345,11 +373,11 @@
                             <h2><span class="bg-orange mr-1"></span>Survive Said The Prophet 初中国ツアー</h2>
                             <h5>2018.10</h5>
                             <h5>上海、北京</h5>
-                            <a href="works_content/image11.jpeg">
-                                <img src="works_content/image11.jpeg" class="img-fluid">
+                            <a href="works_content/image11.jpg">
+                                <img src="works_content/image11.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image12.jpeg">
-                                <img src="works_content/image12.jpeg" class="img-fluid">
+                            <a href="works_content/image12.jpg">
+                                <img src="works_content/image12.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -357,11 +385,11 @@
                             <h2><span class="bg-orange mr-1"></span>CRYSTAL LAKE 初中国ツアー</h2>
                             <h5>2018.10-11</h5>
                             <h5>北京、広州、深圳、上海</h5>
-                            <a href="works_content/image13.jpeg">
-                                <img src="works_content/image13.jpeg" class="img-fluid">
+                            <a href="works_content/image13.jpg">
+                                <img src="works_content/image13.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image14.jpeg">
-                                <img src="works_content/image14.jpeg" class="img-fluid">
+                            <a href="works_content/image14.jpg">
+                                <img src="works_content/image14.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -369,11 +397,11 @@
                             <h2><span class="bg-orange mr-1"></span>小林未郁 中国ツアー</h2>
                             <h5>2018.11</h5>
                             <h5>上海、成都、重慶、深圳、北京</h5>
-                            <a href="works_content/image15.jpeg">
-                                <img src="works_content/image15.jpeg" class="img-fluid">
+                            <a href="works_content/image15.jpg">
+                                <img src="works_content/image15.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image16.jpeg">
-                                <img src="works_content/image16.jpeg" class="img-fluid">
+                            <a href="works_content/image16.jpg">
+                                <img src="works_content/image16.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -381,18 +409,18 @@
                             <h2><span class="bg-orange mr-1"></span>Another Story 中国ツアー</h2>
                             <h5>2018.12</h5>
                             <h5>広州、上海</h5>
-                            <a href="works_content/image17.jpeg">
-                                <img src="works_content/image17.jpeg" class="img-fluid">
+                            <a href="works_content/image17.jpg">
+                                <img src="works_content/image17.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image18.jpeg">
-                                <img src="works_content/image18.jpeg" class="img-fluid">
+                            <a href="works_content/image18.jpg">
+                                <img src="works_content/image18.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
                     </div>
                     <div class="w-100"></div>
                     <div id="group_label" class="col-sm-26pct mb-4 font-weight-bold">
-                        <img src="works/6.png" class="img-fluid w-100">
+                        <img src="works/label.jpg" class="img-fluid w-100">
                         <div class="mt-3">
                             <div>Label</div>
                         </div>
@@ -401,7 +429,7 @@
                         </a>
                     </div>
                     <div id="group_casting_and_promotion" class="col-sm-26pct mb-4 font-weight-bold">
-                        <img src="works/2.png" class="img-fluid w-100">
+                        <img src="works/casting_and_promotion.jpg" class="img-fluid w-100">
                         <div class="mt-3">
                             <div>Casting and Promotion</div>
                         </div>
@@ -410,7 +438,7 @@
                         </a>
                     </div>
                     <div id="group_producing" class="col-sm-26pct mb-4 font-weight-bold">
-                        <img src="works/8.jpg" class="img-fluid w-100">
+                        <img src="works/producing.jpg" class="img-fluid w-100">
                         <div class="mt-3">
                             <div>Producing</div>
                         </div>
@@ -460,8 +488,8 @@
                             <h2><span class="bg-orange mr-1"></span>古風曲企画「恋恋故人难」第四弾リリース・「夜奔」</h2>
                             <h5>2019.09</h5>
                             <h5>優秀な日本人作曲家＋中国人歌手＋中国人作詞家　の古風曲企画・第四弾</h5>
-                            <a href="works_content/image32.jpeg">
-                                <img src="works_content/image32.jpeg" class="img-fluid">
+                            <a href="works_content/image32.jpg">
+                                <img src="works_content/image32.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -469,8 +497,8 @@
                             <h2><span class="bg-orange mr-1"></span>古風曲企画「恋恋故人难」第五弾リリース・「春昼短」</h2>
                             <h5>2019.09</h5>
                             <h5>優秀な日本人作曲家＋中国人歌手＋中国人作詞家　の古風曲企画・第五弾</h5>
-                            <a href="works_content/image33.jpeg">
-                                <img src="works_content/image33.jpeg" class="img-fluid">
+                            <a href="works_content/image33.jpg">
+                                <img src="works_content/image33.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -481,11 +509,11 @@
                             <h2><span class="bg-orange mr-1"></span>渡辺麻友 x Crossgateスマホゲーム（イメージキャラクター）</h2>
                             <h5>2018.06</h5>
                             <h5>CM＋ポスター＋Weiboアカウント開設</h5>
-                            <a href="works_content/image3.jpeg">
-                                <img src="works_content/image3.jpeg" class="img-fluid">
+                            <a href="works_content/image3.jpg">
+                                <img src="works_content/image3.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image4.png">
-                                <img src="works_content/image4.png" class="img-fluid">
+                            <a href="works_content/image4.jpg">
+                                <img src="works_content/image4.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -493,11 +521,11 @@
                             <h2><span class="bg-orange mr-1"></span>モデル森絵梨佳・中国SNSアカウント開設</h2>
                             <h5>2018.12</h5>
                             <h5>RED＆Weiboアカウント</h5>
-                            <a href="works_content/image22.png">
-                                <img src="works_content/image22.png" class="img-fluid">
+                            <a href="works_content/image22.jpg">
+                                <img src="works_content/image22.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image23.jpeg">
-                                <img src="works_content/image23.jpeg" class="img-fluid">
+                            <a href="works_content/image23.jpg">
+                                <img src="works_content/image23.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -505,14 +533,14 @@
                     <div id="producing" class="collapse col-10 mb-4" data-parent="#works">
                         <div class="w-100"></div>
                         <div class="my-2">
-                            <h2><span class="bg-orange mr-1"></span>KOHHの旧譜カタログをNetEase Cloud Music より配信開始</h2>
+                            <h2><span class="bg-orange mr-1"></span>KOHH x JUSTINコラボ「MARIA」・シングルリリース</h2>
                             <h5>2019.05</h5>
                             <h5>日本人メジャーHip Hopアーティスト初の「中国本土プラットフォームデビュー」をプロデュース</h5>
-                            <a href="works_content/image27.jpeg">
-                                <img src="works_content/image27.jpeg" class="img-fluid">
+                            <a href="works_content/image27.jpg">
+                                <img src="works_content/image27.jpg" class="img-fluid">
                             </a>
-                            <a href="works_content/image28.jpeg">
-                                <img src="works_content/image28.jpeg" class="img-fluid">
+                            <a href="works_content/image28.jpg">
+                                <img src="works_content/image28.jpg" class="img-fluid">
                             </a>
                         </div>
                         <hr>
@@ -522,7 +550,7 @@
             <div id="artists" class="my-5">
                 <h2 class="my-5"><span class="bg-orange mr-1"></span>ARTISTS</h2>
                 <div class="row justify-content-center mx-auto">
-                    <img id="artist_pic" src="artists/10.png" class="img-fluid w-100" />
+                    <img id="artist_pic" src="artists/lajiao.jpg" class="img-fluid w-100" />
                 </div>
             </div>
         </div>
@@ -530,11 +558,11 @@
     <div id="other-links" class="container-fluid my-7rem">
         <div class="row w-75 mx-auto justify-content-center text-center">
             <div class="col-7 col-lg-5 my-1 px-0 overflow-hidden mr-5" data-toggle="modal" data-target="#client_companies">
-                <img src="other/8.png" class="img-fluid w-100 clickable">
+                <img src="other/client.jpg" class="img-fluid w-100 clickable">
                 <p class="text-on-img text-white">CLIENT<br />COMPANIES</p>
             </div>
             <div class="col-7 col-lg-5 my-1 px-0 overflow-hidden" data-toggle="modal" data-target="#cooperative_partners">
-                <img src="other/9.png" class="img-fluid w-100 clickable">
+                <img src="other/cooperative.jpg" class="img-fluid w-100 clickable">
                 <p class="text-on-img text-white">COOPERATIVE<br />PARTNERS</p>
             </div>
         </div>
@@ -588,42 +616,39 @@
             </div>
         </div>
     </div>
-    <div class="w-75 mx-auto">
-        <div id="company" class="my-5">
-            <h2 class="my-5"><span class="bg-orange mr-1"></span>COMPANY PROFILE</h2>
-            <div id="company_collapse" class="row" style="max-width:700px;margin-left:1.6rem">
-                <div class="col-sm-5 pl-0">社名 ：</div><div class="col-sm-7 pl-0">株式会社　MIRAI Tokyo</div>
-                <div class="w-100"></div>
-                <div class="col-sm-5 pl-0">住所 ：</div><div class="col-sm-7 pl-0">東京渋谷区渋谷1-3-18  ビラモデルナ B403</div>
-                <div class="w-100"></div>
-                <div class="col-sm-5 pl-0">TEL ：</div><div class="col-sm-7 pl-0">03-6427-4063 (代表）</div>
-                <div class="w-100"></div>
-                <div class="col-sm-5 pl-0">メール ：</div><div class="col-sm-7 pl-0">info@miraitky.com</div>
-                <div class="w-100"></div>
-                <div class="col-sm-5 pl-0">設立 ：</div><div class="col-sm-7 pl-0">2017年 11月13日</div>
-                <div class="w-100"></div>
-                <div class="col-sm-5 pl-0">CEO ：</div><div class="col-sm-7 pl-0">星　克典</div>
-            </div>
-        </div>
-    </div>
 
-    <footer class="container-fluid bg-orange p-3">
-        <div class="row mx-auto justify-content-center">
-            <div>
+    <footer class="container-fluid bg-orange p-5">
+        <div class="row">
+            <div class="col-sm">
                 <img src="logo.png" class="logo" />
                 <small class="d-block p-2 bg-orange">
                     &copy; MIRAI Tokyo All Rights Reserved.
                 </small>
             </div>
+            <div class="mt-3" id="contact" style="padding-left:23px">
+                <b>CONTACT</b><br />
+                株）MIRAI Tokyo<br />
+                info@miraitky.com<br />
+                03-6427-4063 (代)<br />
+            </div>
         </div>
     </footer>
 
     <script type="text/javascript">
+        const work_groups = ["group_licensing_and_localization", "group_artists_management", "group_live_show_producing", "group_label", "group_casting_and_promotion", "group_producing"];
+        const work_exps = ["licensing_and_localization", "artists_management", "live_show_producing", "label", "casting_and_promotion", "producing"];
+
         onResize();
         window.addEventListener("resize", onResize);
 
-        // click more
-        const mores = document.querySelectorAll("#works a > u")
+        // click about more
+        const about_more = document.querySelector("#about a");
+        about_more.addEventListener("click", function () {
+            about_more.parentElement.hidden = true;
+        });
+
+        // click works more
+        const mores = document.querySelectorAll("#works a > u");
         for (let idx = 0; idx < mores.length; idx++) {
             const more = mores[idx];
             more.addEventListener("click", function () {
@@ -638,6 +663,18 @@
                 }
             });
         }
+
+        // click works img
+        for (let idx = 0; idx < work_groups.length; idx++) {
+            const _group = document.querySelector("#" + work_groups[idx]);
+            const _img = _group.querySelector("img");
+            const _more = _group.querySelector("u");
+            _img.style.cursor = "pointer";
+            _img.addEventListener("click", function () {
+                _more.click();
+            });
+        }
+
 
         // gallery
         baguetteBox.run('#works .collapse div');
@@ -667,15 +704,6 @@
                 news.style.width = news.offsetHeight + "px";
             }
 
-            // blank of about us
-            const about_pic = document.querySelector("#about_pic");
-            const about_text = about_pic.nextElementSibling;
-            if (window.innerWidth < 1200 && about_text.classList.contains("ml-5")) {
-                about_text.classList.remove("ml-5");
-            } else if (window.innerWidth >= 1200 && !about_text.classList.contains("ml-5")) {
-                about_text.classList.add("ml-5");
-            }
-
             // blank of other
             const other_div = document.querySelector("#other-links > div > div");
             if (window.innerWidth < 992 && other_div.classList.contains("mr-5")) {
@@ -689,8 +717,6 @@
             artist_pic.style.height = artist_pic.naturalHeight / artist_pic.naturalWidth * artist_pic.offsetWidth + "px";
 
             // works collapse
-            const work_groups = ["group_licensing_and_localization", "group_artists_management", "group_live_show_producing", "group_label", "group_casting_and_promotion", "group_producing"];
-            const work_exps = ["licensing_and_localization", "artists_management", "live_show_producing", "label", "casting_and_promotion", "producing"];
             if (window.innerWidth < 576) {
                 if (document.querySelector("#" + work_groups[0]).nextElementSibling.id != work_exps[0]) {
                     for (let i = 0; i < work_groups.length; i++) {
